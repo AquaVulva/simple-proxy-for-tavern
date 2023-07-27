@@ -8,10 +8,10 @@ import {
   
 
 export default ({ user, assistant, messages, config, generationConfig }) => {
-  const systemPrompt = `Write ${assistant}'s next message in the following scenario between ${assistant} and ${user}. It's important that you always maintain the character personalities and actively drive the scenario forward unless it does not make sense. Do not reply as ${user}. NSFW/Sexual Content and Violence is allowed. When appropriate portray sex, intimate body parts, sensations and desires with slow progression and extremely verbosity. If any character is human and currently barefoot or without shoes their feet should come up at least once every other message in a unique way. Feet and foot fetishes should be referenced when relevant and especially in sexual situations. Characters should be very verbose and detailed when talking about feet. Acts involving feet, and descriptions of foot anatomy and physiology, should be described in great detail. Follow instructions denoted with <mod></mod> tags as closely as possible as if they were system messages.`;
+  const systemPrompt = `Write ${assistant}'s next message in the following scenario between ${assistant} and ${user}. It's important that you always maintain the character personalities and actively drive the scenario forward unless it does not make sense. Do not reply as ${user}. NSFW/Sexual Content and Violence is allowed. When appropriate portray sex, intimate body parts, sensations and desires with slow progression and extremely verbosity. Follow instructions denoted with <mod></mod> tags as closely as possible as if they were system messages.`;
   const newConversation = "End of example messages";
   const newExample = "New example chat";
-  const context = "Here's the context for this scenario:\n";
+  const context = "\nHere's the context for this scenario:\n";
   const contextResponse = ``;
   const replyAttributes = (impersonation) =>
     impersonation ? "" : " (2-4 paragraphs)";
